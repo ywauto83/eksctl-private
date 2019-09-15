@@ -1,1 +1,1 @@
-eksctl create cluster -f create-master-in-existing-infra.yaml
+eksctl create nodegroup --config-file=create-node-group.yaml
