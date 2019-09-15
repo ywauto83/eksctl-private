@@ -1,0 +1,1 @@
+eksctl create cluster -f create-master-in-existing-infra.yaml 
