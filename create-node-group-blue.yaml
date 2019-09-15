@@ -11,3 +11,5 @@ nodeGroups:
     instanceType: t2.small
     desiredCapacity: 1
     privateNetworking: true
+    ssh: # use existing EC2 key
+      publicKeyName: ssh-key-ap-southeast-2
