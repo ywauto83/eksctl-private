@@ -1,0 +1,24 @@
+apiVersion: eksctl.io/v1alpha5
+kind: ClusterConfig
+
+metadata:
+  name: my-eks-cluster-02
+  region: ap-southeast-2
+
+vpc:
+  id: "vpc-0092f44558573b337"  # (optional, must match VPC ID used for each subnet below)
+  subnets:
+    # must provide 'private' and/or 'public' subnets by availibility zone as shown
+    private:
+      ap-southeast-2a:
+        id: "subnet-06b60783efc8e1fc3"
+
+      ap-southeast-2b:
+        id: "subnet-08fcdb7e923993aa0"
+
+      ap-southeast-2c:
+        id: "subnet-0fb8ab819252a1987"
+
+iam:
+  serviceRoleARN: arn:aws:iam::466269729694:role/eksServiceRole
+nodeGroups: []
