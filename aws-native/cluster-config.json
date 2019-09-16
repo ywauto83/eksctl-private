@@ -1,0 +1,30 @@
+{
+    "name": "my-eks-cluster-03",
+    "version": "1.13",
+    "roleArn": "arn:aws:iam::466269729694:role/eksServiceRole",
+    "resourcesVpcConfig": {
+        "subnetIds": [
+            "subnet-06b60783efc8e1fc3",
+            "subnet-08fcdb7e923993aa0",
+            "subnet-0fb8ab819252a1987"
+        ],
+        "securityGroupIds": [
+            "sg-00443c1c84697f51f"
+        ],
+        "endpointPublicAccess": false,
+        "endpointPrivateAccess": true
+    },
+    "logging": {
+        "clusterLogging": [
+            {
+                "types": [
+                    "audit",
+                    "authenticator",
+                    "controllerManager",
+                    "scheduler"
+                ],
+                "enabled": true
+            }
+        ]
+    }
+}
