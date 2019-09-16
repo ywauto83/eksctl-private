@@ -1,0 +1,56 @@
+
+[
+        {
+            "ParameterKey": "ClusterName",
+            "ParameterValue": "my-eks-cluster-03"
+        },
+        {
+            "ParameterKey": "ClusterControlPlaneSecurityGroup",
+            "ParameterValue": "sg-00443c1c84697f51f"
+        },
+        {
+            "ParameterKey": "NodeGroupName",
+            "ParameterValue": "node-group-01"
+        },
+        {
+            "ParameterKey": "NodeAutoScalingGroupMinSize",
+            "ParameterValue": "1"
+        },
+        {
+            "ParameterKey": "NodeAutoScalingGroupDesiredCapacity",
+            "ParameterValue": "1"
+        },
+        {
+            "ParameterKey": "NodeAutoScalingGroupMaxSize",
+            "ParameterValue": "1"
+        },
+        {
+            "ParameterKey": "NodeInstanceType",
+            "ParameterValue": "t2.small"
+        },
+        {
+            "ParameterKey": "NodeImageId",
+            "ParameterValue": "ami-0d8e3da32bd74f39b"
+        },
+        {
+            "ParameterKey": "NodeImageId",
+            "ParameterValue": "ami-0d8e3da32bd74f39b"
+        },
+        {
+            "ParameterKey": "NodeVolumeSize",
+            "ParameterValue": "10"
+        },
+        {
+            "ParameterKey": "KeyName",
+            "ParameterValue": "ssh-key-ap-southeast-2"
+        },
+        {
+            "ParameterKey": "VpcId",
+            "ParameterValue": "vpc-0092f44558573b337"
+        },
+        {
+            "ParameterKey": "Subnets",
+            "ParameterValue": "subnet-06b60783efc8e1fc3,subnet-08fcdb7e923993aa0,subnet-0fb8ab819252a1987"	    
+        }
+    ]
+ 
