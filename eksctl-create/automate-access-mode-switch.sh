@@ -27,3 +27,14 @@ do
     echo polling eks cluster access mode  status every ${period}....
     sleep $period
 done
+
+echo "allow kubectl to reach private master nodes"
+sg=$(aws eks describe-cluster --name my-eks-cluster-02 | jq -r '.cluster.resourcesVpcConfig.securityGroupIds[]')
+
+aws ec2 authorize-security-group-ingress \ 
+	--group-id ${sg} \
+	--protocol tcp \
+	--port 443 \
+	--source-group sg-0aa4c9fe6d2a0e096
+echo "SG updated"
+
