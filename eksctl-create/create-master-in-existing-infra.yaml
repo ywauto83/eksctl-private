@@ -6,18 +6,18 @@ metadata:
   region: ap-southeast-2
 
 vpc:
-  id: "vpc-0092f44558573b337"  # (optional, must match VPC ID used for each subnet below)
+  id: "vpc-01104293528d94085"  # (optional, must match VPC ID used for each subnet below)
   subnets:
     # must provide 'private' and/or 'public' subnets by availibility zone as shown
     private:
       ap-southeast-2a:
-        id: "subnet-06b60783efc8e1fc3"
+        id: "subnet-0045df0c44a2d7d6f"
 
       ap-southeast-2b:
-        id: "subnet-08fcdb7e923993aa0"
+        id: "subnet-0d059d3dc2d08ae23"
 
       ap-southeast-2c:
-        id: "subnet-0fb8ab819252a1987"
+        id: "subnet-0e4f2bece1774735b"
 
 iam:
   serviceRoleARN: arn:aws:iam::466269729694:role/eksServiceRole
